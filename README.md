@@ -1,7 +1,9 @@
 # standard-reveal
 
 [![Travis-CI](https://travis-ci.org/gaboesquivel/standard-reveal.svg)](https://travis-ci.org/gaboesquivel/standard-reveal)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)  
+
+Reveal.js boilerplate. Standard style, Browserify and Pug templates
 
 _This is a work in progress, contributions are welcomed_
 
