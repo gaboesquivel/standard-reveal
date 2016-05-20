@@ -1,0 +1,53 @@
+{
+  "name": "standard-reveal",
+  "version": "1.0.0",
+  "description": "A minimal setup for using Reveal.js with Standard style, Browserify and Pug",
+  "main": "src/js/main.js",
+  "scripts": {
+    "build": "npm run clean && npm run build:html && npm run build:data && npm run build:css && npm run build:js",
+    "clean": "rimraf build/ && mkdirp build/",
+    "build:css": "mkdirp build/css && cpx src/css/* build/css && npm run build:css_vendor",
+    "build:css_vendor": "mkdirp build/css/lib && cpx \"node_modules/reveal.js/css/**/*\" build/css/lib/",
+    "build:scss": "mkdirp build/css && node-sass src/css/main.scss --output build/css/",
+    "build:data": "mkdirp build/data && cpx -v \"src/data/**/*\" build/data",
+    "build:html": "pug src/index.pug -o build/",
+    "build:js": "mkdirp build/js && browserify src/js/main.js > build/js/bundle.js",
+    "test": "standard ./src/js/*",
+    "start": "npm run build && npm run watch",
+    "serve": "http-server ./build",
+    "watch": "watch \"npm run build\" src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaboesquivel/standard-reveal.git"
+  },
+  "keywords": [
+    "reveal",
+    "presentation",
+    "npm",
+    "pug",
+    "slides"
+  ],
+  "author": "gaboesquivel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaboesquivel/standard-reveal/issues"
+  },
+  "homepage": "https://github.com/gaboesquivel/standard-reveal#readme",
+  "dependencies": {
+    "analytics": "git+https://github.com/sole/analytics.git",
+    "browserify": "^13.0.1",
+    "cpx": "^1.2.1",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.4.0",
+    "reveal.js": "^3.1.0",
+    "rimraf": "^2.4.3",
+    "watch": "^0.18.0"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0",
+    "pug": "^2.0.0-alpha7",
+    "pug-cli": "^1.0.0-alpha5",
+    "standard": "^7.1.0"
+  }
+}

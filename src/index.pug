@@ -1,0 +1,44 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui')
+		title DECK_TITLE
+
+		link(rel='stylesheet', type='text/css', href='css/lib/reveal.css')
+		//link(rel='stylesheet', type='text/css', href='css/lib/theme/serif.css')
+
+		link(rel='stylesheet', type='text/css', href='css/main.css')
+
+		script(src='js/bundle.js', defer)
+
+	body
+		div.reveal
+			div.slides
+				section
+					h1 DECK_TITLE
+					h2 Header 2
+					h3 Header 3
+				section
+					h1 Bullet list
+					ul
+						li one
+						li two
+						li three
+				section
+					h1 Not really bullet list
+					p.fragment Para one
+					p.fragment Para two
+
+				section(data-background='data/huts.jpg')
+					h1 Full screen background
+
+				section
+					h1 Source code
+					pre
+						code.
+							var Theremin = require('openmusic-theremin');
+							var ac = new AudioContext();
+							var thereNode = Theremin(ac);
+				section
+					h1 Thanks!
