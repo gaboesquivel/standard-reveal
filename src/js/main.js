@@ -1,10 +1,3 @@
-// var path = require('path')
-// var fs = require('fs')
-
-// I'm beyond perverse and track hits to the slides.
-// var analytics = require('analytics')
-// analytics('')
-
 // TODO: this is ugly ugly ugly
 require('../../node_modules/reveal.js/lib/js/head.min.js')
 

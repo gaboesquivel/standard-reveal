@@ -35,7 +35,6 @@
   },
   "homepage": "https://github.com/gaboesquivel/standard-reveal#readme",
   "dependencies": {
-    "analytics": "git+https://github.com/sole/analytics.git",
     "browserify": "^13.0.1",
     "cpx": "^1.2.1",
     "mkdirp": "^0.5.1",
