@@ -3,25 +3,28 @@
 [![Travis-CI](https://travis-ci.org/gaboesquivel/standard-reveal.svg)](https://travis-ci.org/gaboesquivel/standard-reveal)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)  
 
-Reveal.js boilerplate. Standard style, Browserify and Pug templates
+Reveal.js boilerplate.   
+Standard style, Browserify, Sass, Browser-Sync and Pug templates
 
-_This is a work in progress, contributions are welcomed_
+_contributions are welcomed!_
 
 ## Features
 
 * pug templates ( aka jade )
 * standard style linting
-* static node server `npm run serve`
+* static node server ( browser-sync ) `npm run serve`
 * browserify bundling with file watch `npm start`
 
-## Getting Started
+#### TODO:
+* improve files watch and reload
+* combine file watch and serve on a single script
 
+## Getting Started
 
 ### npm scripts
 
 * npm start:  builds the presentation and starts watching for file changes.
-* npm run serve: serves up ./build dir with node
-
+* npm run serve: serves ./build dir with browser-sync
 
 ## Contributing
 

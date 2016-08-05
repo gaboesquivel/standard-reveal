@@ -14,7 +14,7 @@
     "test": "standard ./src/js/*",
     "start": "npm run build && npm run watch",
     "serve": "browser-sync start --server 'build/' --files 'build/'",
-    "watch": "watch \"npm run build\" src/"
+    "watch": "watch \"npm run build\" src/"s
   },
   "repository": {
     "type": "git",
